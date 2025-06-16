@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABTECH AI Assistant</title>
+
+  <!-- Load Tixae Widget Styles -->
+  <link rel="stylesheet" href="https://vg-bunny-cdn.b-cdn.net/vg_dev_build/styles.css">
+
+  <!-- Hide Tixae Branding -->
+  <style>
+    .vg-footer-branding,
+    .vg-footer-branding a {
+      display: none !important;
+      visibility: hidden !important;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "DM Sans", sans-serif;
+      background-color: #f0f4f9;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 20px;
+      color: #003366;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Widget Container -->
+  <div id="VG_OVERLAY_CONTAINER" class="vg-render-container" style="width: 0; height: 0;"></div>
+
+  <!-- Tixae Configuration -->
+  <script>
+    window.VG_CONFIG = {
+      ID: "eRhIdi84znxan4uRIMt3", // Your Tixae Agent ID
+      region: "na",
+      render: "bottom-right", // Can be 'full-width', 'bottom-left', or 'bottom-right'
+      stylesheets: [
+        "https://vg-bunny-cdn.b-cdn.net/vg_dev_build/styles.css"
+      ],
+      // Optional: add user or autostart config here
+    };
+
+    // Load Tixae widget script
+    const VG_SCRIPT = document.createElement("script");
+    VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_dev_build/vg_bundle.js";
+    VG_SCRIPT.defer = true;
+    document.body.appendChild(VG_SCRIPT);
+  </script>
+</body>
+</html>
